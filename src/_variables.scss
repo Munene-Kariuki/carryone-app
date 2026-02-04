@@ -1,0 +1,139 @@
+// ============================================================
+// COLORS
+// ============================================================
+$navy:          #1a2744;
+$navy-dark:     #111d33;
+$navy-light:    #2c3e58;
+$orange:        #f39c12;
+$orange-light:  #f5a623;
+$orange-dark:   #e67e22;
+$white:         #ffffff;
+$black:         #000000;
+$text-dark:     #2c3e50;
+$text-medium:   #546e7a;
+$text-light:    rgba(255, 255, 255, 0.85);
+$gray-100:      #f8f9fa;
+$gray-200:      #e9ecef;
+$gray-300:      #dee2e6;
+$gray-400:      #ced4da;
+$gray-500:      #adb5bd;
+$gray-600:      #6c757d;
+$gray-700:      #495057;
+$gray-800:      #343a40;
+$gray-900:      #212529;
+
+// Semantic colors
+$primary:       $orange;
+$secondary:     $navy;
+$success:       #28a745;
+$danger:        #dc3545;
+$warning:       #ffc107;
+$info:          #17a2b8;
+
+// ============================================================
+// SPACING
+// ============================================================
+$spacing-xs:    4px;
+$spacing-sm:    8px;
+$spacing-md:    16px;
+$spacing-lg:    24px;
+$spacing-xl:    32px;
+$spacing-2xl:   48px;
+$spacing-3xl:   64px;
+$spacing-4xl:   80px;
+
+// ============================================================
+// TYPOGRAPHY
+// ============================================================
+$font-family-primary:   'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', sans-serif;
+$font-family-secondary: Georgia, 'Times New Roman', serif;
+$font-family-mono:      'Courier New', Courier, monospace;
+
+$font-size-xs:    0.75rem;   // 12px
+$font-size-sm:    0.875rem;  // 14px
+$font-size-base:  1rem;      // 16px
+$font-size-lg:    1.125rem;  // 18px
+$font-size-xl:    1.25rem;   // 20px
+$font-size-2xl:   1.5rem;    // 24px
+$font-size-3xl:   1.875rem;  // 30px
+$font-size-4xl:   2.25rem;   // 36px
+$font-size-5xl:   3rem;      // 48px
+
+$font-weight-light:     300;
+$font-weight-normal:    400;
+$font-weight-medium:    500;
+$font-weight-semibold:  600;
+$font-weight-bold:      700;
+$font-weight-extrabold: 800;
+
+$line-height-tight:   1.25;
+$line-height-normal:  1.5;
+$line-height-relaxed: 1.75;
+
+// ============================================================
+// LAYOUT
+// ============================================================
+$sidebar-width:   280px;
+$nav-height:      72px;
+$bar-height:      48px;
+$container-sm:    640px;
+$container-md:    768px;
+$container-lg:    1024px;
+$container-xl:    1280px;
+$container-2xl:   1536px;
+
+// ============================================================
+// BREAKPOINTS
+// ============================================================
+$breakpoint-xs:   480px;
+$breakpoint-sm:   640px;
+$breakpoint-md:   768px;
+$breakpoint-lg:   1024px;
+$breakpoint-xl:   1280px;
+$breakpoint-2xl:  1536px;
+
+// ============================================================
+// BORDERS & RADIUS
+// ============================================================
+$border-width:      1px;
+$border-width-lg:   2px;
+$border-color:      $gray-300;
+$border-radius-sm:  4px;
+$border-radius:     8px;
+$border-radius-lg:  12px;
+$border-radius-xl:  16px;
+$border-radius-2xl: 24px;
+$border-radius-full: 9999px;
+
+// ============================================================
+// SHADOWS
+// ============================================================
+$shadow-sm:  0 1px 2px 0 rgba(0, 0, 0, 0.05);
+$shadow:     0 2px 6px rgba(0, 0, 0, 0.08);
+$shadow-md:  0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg:  0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl:  0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+// ============================================================
+// TRANSITIONS
+// ============================================================
+$transition-fast:     0.15s ease;
+$transition-base:     0.2s ease;
+$transition-slow:     0.3s ease;
+$transition-slower:   0.5s ease;
+$easing-default:      cubic-bezier(0.4, 0, 0.2, 1);
+$easing-in:           cubic-bezier(0.4, 0, 1, 1);
+$easing-out:          cubic-bezier(0, 0, 0.2, 1);
+$easing-in-out:       cubic-bezier(0.4, 0, 0.2, 1);
+
+// ============================================================
+// Z-INDEX LAYERS
+// ============================================================
+$z-index-dropdown:    1000;
+$z-index-sticky:      1020;
+$z-index-fixed:       1030;
+$z-index-modal-backdrop: 1040;
+$z-index-modal:       1050;
+$z-index-popover:     1060;
+$z-index-tooltip:     1070;

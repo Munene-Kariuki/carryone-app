@@ -1,0 +1,184 @@
+// ============================================================
+// BUTTON COMPONENTS
+// ============================================================
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: $spacing-sm;
+  padding: 12px 24px;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-semibold;
+  line-height: 1;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: all $transition-base;
+  white-space: nowrap;
+  user-select: none;
+  
+  &:focus-visible {
+    outline: 2px solid $orange;
+    outline-offset: 2px;
+  }
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  // Sizes
+  &--sm {
+    padding: 8px 16px;
+    font-size: $font-size-sm;
+  }
+  
+  &--lg {
+    padding: 16px 32px;
+    font-size: $font-size-lg;
+  }
+  
+  // Primary button
+  &--primary {
+    background-color: $orange;
+    color: $white;
+    border-color: $orange;
+    
+    &:hover {
+      background-color: $orange-dark;
+      border-color: $orange-dark;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  
+  // Secondary button
+  &--secondary {
+    background-color: $navy;
+    color: $white;
+    border-color: $navy;
+    
+    &:hover {
+      background-color: $navy-dark;
+      border-color: $navy-dark;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  
+  // Outline button
+  &--outline {
+    background-color: transparent;
+    color: $orange;
+    border-color: $orange;
+    
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+    
+    &-secondary {
+      color: $navy;
+      border-color: $navy;
+      
+      &:hover {
+        background-color: $navy;
+        color: $white;
+      }
+    }
+  }
+  
+  // Ghost button
+  &--ghost {
+    background-color: transparent;
+    color: $orange;
+    border-color: transparent;
+    
+    &:hover {
+      background-color: rgba($orange, 0.1);
+    }
+    
+    &-secondary {
+      color: $navy;
+      
+      &:hover {
+        background-color: rgba($navy, 0.05);
+      }
+    }
+  }
+  
+  // Link button
+  &--link {
+    background-color: transparent;
+    color: $orange;
+    border-color: transparent;
+    padding: 0;
+    text-decoration: underline;
+    
+    &:hover {
+      color: $orange-dark;
+    }
+  }
+  
+  // Full width
+  &--full {
+    width: 100%;
+  }
+  
+  // Icon buttons
+  &--icon {
+    padding: 12px;
+    
+    &.btn--sm {
+      padding: 8px;
+    }
+    
+    &.btn--lg {
+      padding: 16px;
+    }
+  }
+}
+
+// Button group
+.btn-group {
+  display: inline-flex;
+  gap: $spacing-sm;
+  
+  &--vertical {
+    flex-direction: column;
+  }
+  
+  &--attached {
+    gap: 0;
+    
+    .btn {
+      border-radius: 0;
+      
+      &:first-child {
+        border-top-left-radius: $border-radius;
+        border-bottom-left-radius: $border-radius;
+      }
+      
+      &:last-child {
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+      }
+      
+      &:not(:last-child) {
+        border-right-width: 1px;
+      }
+    }
+  }
+}

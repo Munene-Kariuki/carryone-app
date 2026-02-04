@@ -1,0 +1,111 @@
+// ============================================================
+// MODERN CSS RESET
+// ============================================================
+
+// Box sizing
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Remove default margins and padding
+html,
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+ul, ol, li,
+figure, figcaption,
+dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+// Set core root defaults
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+// Set core body defaults
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: $line-height-normal;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  color: $text-dark;
+  background-color: $white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Remove list styles
+ul,
+ol {
+  list-style: none;
+}
+
+// Make images easier to work with
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+// Remove default button styles
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+// Remove link decorations
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Remove textarea resize
+textarea {
+  resize: vertical;
+}
+
+// Form elements
+input,
+textarea,
+select {
+  &:focus {
+    outline: 2px solid $orange;
+    outline-offset: 2px;
+  }
+}
+
+// Remove animations for people who've turned them off
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

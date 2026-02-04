@@ -1,0 +1,243 @@
+// ============================================================
+// TYPOGRAPHY
+// ============================================================
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  line-height: $line-height-tight;
+  color: $navy;
+  margin-bottom: $spacing-md;
+}
+
+h1 {
+  font-size: $font-size-4xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-3xl;
+  }
+}
+
+h2 {
+  font-size: $font-size-3xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-2xl;
+  }
+}
+
+h3 {
+  font-size: $font-size-2xl;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-size-xl;
+  }
+}
+
+h4 {
+  font-size: $font-size-xl;
+}
+
+h5 {
+  font-size: $font-size-lg;
+}
+
+h6 {
+  font-size: $font-size-base;
+}
+
+// Paragraphs
+p {
+  margin-bottom: $spacing-md;
+  line-height: $line-height-relaxed;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Links
+a {
+  color: $orange;
+  transition: color $transition-base;
+  
+  &:hover {
+    color: $orange-dark;
+  }
+  
+  &:focus-visible {
+    outline: 2px solid $orange;
+    outline-offset: 2px;
+    border-radius: $border-radius-sm;
+  }
+}
+
+// Strong & Bold
+strong,
+b {
+  font-weight: $font-weight-bold;
+}
+
+// Emphasis
+em,
+i {
+  font-style: italic;
+}
+
+// Small text
+small {
+  font-size: $font-size-sm;
+}
+
+// Blockquotes
+blockquote {
+  padding: $spacing-lg;
+  border-left: 4px solid $orange;
+  background: $gray-100;
+  border-radius: $border-radius;
+  margin: $spacing-lg 0;
+  font-style: italic;
+  
+  p {
+    margin-bottom: $spacing-sm;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  cite {
+    display: block;
+    margin-top: $spacing-sm;
+    font-size: $font-size-sm;
+    color: $text-medium;
+    font-style: normal;
+    
+    &::before {
+      content: '— ';
+    }
+  }
+}
+
+// Code
+code {
+  font-family: $font-family-mono;
+  font-size: 0.9em;
+  background: $gray-100;
+  padding: 2px 6px;
+  border-radius: $border-radius-sm;
+  color: $navy;
+}
+
+pre {
+  background: $gray-900;
+  color: $white;
+  padding: $spacing-lg;
+  border-radius: $border-radius;
+  overflow-x: auto;
+  margin: $spacing-lg 0;
+  
+  code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+// Horizontal rule
+hr {
+  border: none;
+  border-top: $border-width solid $border-color;
+  margin: $spacing-2xl 0;
+}
+
+// Lists
+ul,
+ol {
+  margin-bottom: $spacing-md;
+  padding-left: $spacing-lg;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  li {
+    margin-bottom: $spacing-sm;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+// Definition lists
+dl {
+  margin-bottom: $spacing-md;
+  
+  dt {
+    font-weight: $font-weight-bold;
+    margin-bottom: $spacing-xs;
+  }
+  
+  dd {
+    margin-bottom: $spacing-md;
+    margin-left: $spacing-lg;
+  }
+}
+
+// Text utilities
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-primary {
+  color: $orange;
+}
+
+.text-secondary {
+  color: $navy;
+}
+
+.text-muted {
+  color: $text-medium;
+}
+
+.font-bold {
+  font-weight: $font-weight-bold;
+}
+
+.font-semibold {
+  font-weight: $font-weight-semibold;
+}
+
+.font-normal {
+  font-weight: $font-weight-normal;
+}
