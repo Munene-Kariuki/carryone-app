@@ -5,19 +5,42 @@ export const coreRoutes: Routes = [
   {
     path: '',
     component: Layout,
-    children: [
-    //   {
-    //     path: '',
-    //     loadChildren: () =>
-    //       import('../features/dashboard/dashboard.routes')
-    //         .then(m => m.dashboardRoutes),
-    //   },
-    //   {
-    //     path: 'projects',
-    //     loadChildren: () =>
-    //       import('../features/projects/projects.routes')
-    //         .then(m => m.projectsRoutes),
-    //   },
+        children: [
+      {
+        path: '',
+        loadComponent: () =>
+          import('../features/home/home').then(m => m.Home),
+      },
+      {
+        path: 'about',
+        loadComponent: () =>
+          import('../features/about/about').then(m => m.About),
+      },
+      {
+        path: 'services',
+        loadComponent: () =>
+          import('../features/services/services').then(m => m.Services),
+      },
+      {
+        path: 'projects',
+        loadComponent: () =>
+          import('../features/projects/projects').then(m => m.Projects),
+      },
+      {
+        path: 'equipment',
+        loadComponent: () =>
+          import('../features/equipment/equipment').then(m => m.Equipment),
+      },
+      {
+        path: 'gallery',
+        loadComponent: () =>
+          import('../features/gallery/gallery').then(m => m.Gallery),
+      },
+      {
+        path: 'contact',
+        loadComponent: () =>
+          import('../features/contact/contact').then(m => m.Contact),
+      },
     ],
   },
 ];

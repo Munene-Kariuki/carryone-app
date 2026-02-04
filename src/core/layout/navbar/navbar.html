@@ -13,13 +13,46 @@
 
   <!-- Desktop nav links -->
   <ul class="navbar__links">
-    <li><a href="#" class="navbar__link navbar__link--active">Home</a></li>
-    <li><a href="#" class="navbar__link">About Us</a></li>
-    <li><a href="#" class="navbar__link">Services</a></li>
-    <li><a href="#" class="navbar__link">Projects</a></li>
-    <li><a href="#" class="navbar__link">Equipment</a></li>
-    <li><a href="#" class="navbar__link">Gallery</a></li>
-    <li><a href="#" class="navbar__link">Contact Us</a></li>
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="navbar__link--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="navbar__link"
+      >
+        Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="/about" routerLinkActive="navbar__link--active" class="navbar__link">
+        About Us
+      </a>
+    </li>
+    <li>
+      <a routerLink="/services" routerLinkActive="navbar__link--active" class="navbar__link">
+        Services
+      </a>
+    </li>
+    <li>
+      <a routerLink="/projects" routerLinkActive="navbar__link--active" class="navbar__link">
+        Projects
+      </a>
+    </li>
+    <li>
+      <a routerLink="/equipment" routerLinkActive="navbar__link--active" class="navbar__link">
+        Equipment
+      </a>
+    </li>
+    <li>
+      <a routerLink="/gallery" routerLinkActive="navbar__link--active" class="navbar__link">
+        Gallery
+      </a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="navbar__link--active" class="navbar__link">
+        Contact Us
+      </a>
+    </li>
   </ul>
 
   <!-- Mobile hamburger button -->
@@ -122,14 +155,76 @@
   <!-- Sidebar nav links -->
   <ul class="sidebar__links">
     <li>
-      <a href="#" class="sidebar__link sidebar__link--active" (click)="closeSidebar()">Home</a>
+      <a
+        routerLink="/"
+        routerLinkActive="sidebar__link--active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        Home
+      </a>
     </li>
-    <li><a href="#" class="sidebar__link" (click)="closeSidebar()">About Us</a></li>
-    <li><a href="#" class="sidebar__link" (click)="closeSidebar()">Services</a></li>
-    <li><a href="#" class="sidebar__link" (click)="closeSidebar()">Projects</a></li>
-    <li><a href="#" class="sidebar__link" (click)="closeSidebar()">Equipment</a></li>
-    <li><a href="#" class="sidebar__link" (click)="closeSidebar()">Gallery</a></li>
-    <li><a href="#" class="sidebar__link" (click)="closeSidebar()">Contact Us</a></li>
+    <li>
+      <a
+        routerLink="/about"
+        routerLinkActive="sidebar__link--active"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        About Us
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/services"
+        routerLinkActive="sidebar__link--active"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        Services
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/projects"
+        routerLinkActive="sidebar__link--active"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        Projects
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/equipment"
+        routerLinkActive="sidebar__link--active"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        Equipment
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/gallery"
+        routerLinkActive="sidebar__link--active"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        Gallery
+      </a>
+    </li>
+    <li>
+      <a
+        routerLink="/contact"
+        routerLinkActive="sidebar__link--active"
+        class="sidebar__link"
+        (click)="closeSidebar()"
+      >
+        Contact Us
+      </a>
+    </li>
   </ul>
 
   <!-- Contact info inside sidebar -->
