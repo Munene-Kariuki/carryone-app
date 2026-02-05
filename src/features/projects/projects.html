@@ -1,1 +1,26 @@
-<p>projects works!</p>
+
+<div class="description-container">
+    <div class="description-overlay">
+        <h1>Projects</h1>
+        <p>Explore our portfolio of successfully completed projects that showcase
+      our commitment to quality and innovation.</p>
+    </div>
+</div>
+
+<h2 class="projects-title">Our Projects</h2>
+
+<div class="tabs">
+    <button 
+        *ngFor="let cat of categories" 
+        [class.active]="cat === activeCategory"
+        (click)="activeCategory =cat">{{cat}}</button>
+</div>
+
+<div class="grid">
+    <div class="card" *ngFor="let project of filteredProjects">
+        <img [src]="project.image" alt="">
+        <h3>{{project.title}}</h3>
+    </div>
+
+</div>
+
